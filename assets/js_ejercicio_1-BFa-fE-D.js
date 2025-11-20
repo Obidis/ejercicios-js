@@ -1,0 +1,1 @@
+import"./main-CZKW-ukF.js";const t=()=>{const o=["red","blue","green","pink","blue","yellow"];let e=Math.round(Math.random()*(o.length-1));return o[e]},n=document.getElementById("body");document.getElementById("cambiarColor").addEventListener("click",()=>n.style.backgroundColor=t());

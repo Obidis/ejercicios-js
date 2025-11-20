@@ -1,0 +1,5 @@
+import"./main-CZKW-ukF.js";let t=JSON.parse(localStorage.getItem("todo"))||[];const a=document.getElementById("input"),s=document.getElementById("todoList"),l=document.getElementById("añadir"),r=document.getElementById("borrar");document.addEventListener("DOMContentLoaded",()=>{l.addEventListener("click",i),a.addEventListener("keydown",e=>{e.key==="Enter"&&(e.preventDefault(),i())}),r.addEventListener("click",u),d()});function i(){const e=a.value.trim();e!==""&&(t.push({text:e,disabled:!1}),c(),a.value="",d())}function u(){t=[],c(),d()}function d(){s.innerHTML="",t.forEach((e,o)=>{const n=document.createElement("P");n.innerHTML=` <div class= "todo-container">
+        <input type="checkbox" class= "todo-checkbox" id="input-${o}" ${e.disabled?"checked":""}>
+
+        <p id="todo-${o}" class="${o.disabled?"disabled":""}">${e.text}</p>
+        </div>`,n.querySelector(".todo-checkbox").addEventListener("change",()=>{p(o)}),s.appendChild(n)})}function c(){localStorage.setItem("todo",JSON.stringify(t))}function p(e){t[e].disabled=!t[e].disabled,c(),d()}

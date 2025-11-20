@@ -1,0 +1,1 @@
+import"./main-CZKW-ukF.js";const e=document.getElementById("number"),t=document.getElementById("reset"),c=document.getElementById("clics");let n=1;c.onclick=()=>e.innerHTML=n++;t.onclick=()=>{n=1,e.innerHTML="0"};

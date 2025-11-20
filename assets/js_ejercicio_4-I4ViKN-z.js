@@ -1,0 +1,1 @@
+import"./main-CZKW-ukF.js";const n=document.getElementById("nuevaBusqueda"),s=document.getElementById("lista").getElementsByTagName("li");n.addEventListener("input",function(){const o=n.value.toLowerCase();for(let t=0;t<s.length;t++){const e=s[t];e.textContent.toLowerCase().startsWith(o)?e.style.display="":e.style.display="none"}});
